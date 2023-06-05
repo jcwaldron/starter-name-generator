@@ -4,7 +4,7 @@ const App = () => {
   const [name, setName] = useState([])
 
   useEffect(() => {
-    fetch('https://enigmatic-shore-92552.herokuapp.com/generate')
+    fetch('https://module-36-backend.onrender.com/generate')
       .then((res) => res.json())
       .then((nme) => setName([nme]))
   }, [])
